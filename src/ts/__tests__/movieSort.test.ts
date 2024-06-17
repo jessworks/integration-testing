@@ -8,7 +8,7 @@ describe('sort movies', () => {
         {Title: 'Classic Film', imdbID: '789' , Type: 'Thriller' , Poster: 'Yet another image' , Year: '2014'}
     ];
 
-    test('Movies should be sorted in descending order', () => {
+    test('Movies should be sorted in ascending order', () => {
         const sortedMovies = movieSort(movies);
 
         expect(sortedMovies.map(m => m.Title)).toEqual([
@@ -18,7 +18,7 @@ describe('sort movies', () => {
         ]);
     });
 
-    test('Movies should be sorted in ascending order', () => {
+    test('Movies should be sorted in descending order', () => {
         const sortedMovies = movieSort(movies, false);
 
         expect(sortedMovies.map(m => m.Title)).toEqual([
