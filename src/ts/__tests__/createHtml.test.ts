@@ -14,5 +14,6 @@ describe('create HTML', () => {
 
         //assert
         expect(container.children.length).toBe(movies.length);
-    })
-})
+        
+    });
+});
